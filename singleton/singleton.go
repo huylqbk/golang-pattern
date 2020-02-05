@@ -22,7 +22,7 @@ var (
 type Mysql struct{}
 
 func (m Mysql) Connect() {
-	fmt.Println("Mysql Connected")
+	fmt.Println("DB Connected")
 }
 
 func New() DB {
