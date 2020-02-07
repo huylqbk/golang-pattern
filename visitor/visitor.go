@@ -4,12 +4,14 @@ import "fmt"
 
 //double dispatch include accept and visit
 func main() {
-	var lang Language
-	lang = English{}
 	visitor := TextLanguage{
 		Text: "Huy",
 	}
+
+	var lang Language
+	lang = English{}
 	lang.accept(visitor)
+
 	lang = Vietnamese{}
 	lang.accept(visitor)
 }
